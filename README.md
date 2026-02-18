@@ -2,7 +2,7 @@
 
 ## Early Prediction of Sepsis from Clinical Data
 
-##PhysioNet / Computing in Cardiology Challenge 2019
+## PhysioNet / Computing in Cardiology Challenge 2019
 
 ### Overview
 
