@@ -35,7 +35,7 @@ The objective of this project was to build a machine learning pipeline capable o
 	•	Missingness indicators
 
 #### 3. Modeling Approaches
-	•	Gradient Boosting (e.g., XGBoost)
+	•	XGBoost
 
 #### 4. Evaluation Metrics
 	•	AUROC
