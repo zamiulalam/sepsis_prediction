@@ -1,10 +1,10 @@
 # Sepsis Prediction
 
-Early Prediction of Sepsis from Clinical Data
+## Early Prediction of Sepsis from Clinical Data
 
-PhysioNet / Computing in Cardiology Challenge 2019
+##PhysioNet / Computing in Cardiology Challenge 2019
 
-Overview
+### Overview
 
 This project focuses on early prediction of sepsis in ICU patients using high-resolution electronic health record (EHR) time-series data from the PhysioNet 2019 Sepsis Challenge.
 
@@ -12,49 +12,43 @@ Sepsis is a life-threatening condition caused by a dysregulated immune response 
 
 The objective of this project was to build a machine learning pipeline capable of predicting sepsis onset hours before clinical recognition, enabling earlier intervention and improved patient outcomes.
 
-⸻
-
-Dataset
+### Dataset
 	•	Source: PhysioNet 2019 Challenge Dataset
 	•	Data type: Multivariate ICU time-series
 	•	Variables: Vital signs, laboratory values, demographics
 	•	Labels: Hourly SepsisLabel (0/1)
 	•	Structure: Patient-level longitudinal records
 
-⸻
+### Methodology
 
-Methodology
-
-1. Data Preprocessing
+#### 1. Data Preprocessing
 	•	Patient-wise grouping (Patient_ID)
 	•	Forward-fill and backward-fill imputation per patient
 	•	Feature reduction and selection
 	•	Handling missingness patterns
 	•	Time-order sorting to preserve temporal structure
 
-2. Feature Engineering
+#### 2. Feature Engineering
 	•	Rolling statistics (mean, trend, variance)
 	•	Time since ICU admission
 	•	Temporal difference (delta) features
 	•	Missingness indicators
 
-3. Modeling Approaches
+#### 3. Modeling Approaches
 	•	Gradient Boosting (e.g., XGBoost)
 
-4. Evaluation Metrics
+#### 4. Evaluation Metrics
 	•	AUROC
 	•	AUPRC (primary challenge metric)
 
-⸻
 
-Results
+### Results
 	•	Achieved strong AUROC and AUPRC performance
 	•	Demonstrated improved early detection capability within clinically relevant prediction windows
 	•	Showed that temporal feature engineering significantly improves performance over static models
 
-⸻
 
-Future Work
+### Future Work
 	•	Transformer-based sequence models
 	•	Survival analysis framing
 	•	Uncertainty quantification
